@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'groups',
+    'students',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -66,6 +67,12 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
 ]
 
 WSGI_APPLICATION = 'evgart.wsgi.application'

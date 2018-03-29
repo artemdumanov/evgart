@@ -1,0 +1,24 @@
+<h1>Group with id {{ group.id }}</h1>
+
+<table>
+    <tr>
+        <th width="30%">Name:</th>
+        <th width="30%">Max students:</th>
+        <th width="30%">Start date:</th>
+    </tr>
+    <tr>
+        <td>{{ group.name }}</td>
+        <td>{{ group.max_students }}</td>
+        <td>{{ group.start_date }}</td>
+    </tr>
+</table>
+
+<style>
+    table {
+        border-spacing: 0px
+    }
+
+    td, th {
+        border: 1px solid black;
+    }
+</style>

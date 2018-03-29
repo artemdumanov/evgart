@@ -1,0 +1,19 @@
+table {
+    border-spacing: 0
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+td {
+    padding: 4px;
+}
+
+#id {
+    font-weight: bold;
+}
+
+.middle {
+    text-align: center;
+}

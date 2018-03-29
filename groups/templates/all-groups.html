@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All groups</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static "css/all-groups.css" %}">
+</head>
+<body>
+<table>
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Start Date</th>
+        <th>Max Student</th>
+    </tr>
+    {% for group in groups %}
+        <tr id="{{ group.id }}">
+            <td>{{ group.id }}</td>
+            <td>{{ group.name }}</td>
+            <td>{{ group.start_date }}</td>
+            <td class="middle">{{ group.max_students }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
